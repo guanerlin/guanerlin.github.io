@@ -4,12 +4,13 @@ title: "zsh: command not found: django-admin.py"
 data: 2020-11-11 15:28:10 +0800
 tags: errors
 ---
-Forward error cure:
 
->>python -m django --version
+### Forward error solution:
+
+	python -m django --version
 
 
->> 1.11.4
+	1.11.4
 
 
 说明django安装成功，但是django-admin 报错 ‘zsh: command not found: django-admin.py’
