@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Coding
+permalink: /coding/
 ---
 
 This is a screenshot captured when I was playing Don't starve together with my sister.
