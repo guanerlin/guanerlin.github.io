@@ -29,7 +29,9 @@ tags: errors
 
   
 
-  
-
-  
-
+- File color meaning
+  1. red meaning broken link file
+  2. blue meaning execable file
+  3. green meanning link file
+  4. white meaning normal file
+  5. purple meaning folder
