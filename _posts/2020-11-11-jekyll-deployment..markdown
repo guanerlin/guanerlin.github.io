@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "jekyll deployment"
-data: 2020-11-11 15:28:10 +0800
+data: 2020-11-11 17:07:10 +0800
 tags: errors
 ---
 
