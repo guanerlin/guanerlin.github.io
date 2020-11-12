@@ -4,21 +4,25 @@ title: Coding
 permalink: /coding/
 ---
 
-This is a screenshot captured when I was playing Don't starve together with my sister.
-
-LOL
-
-![When we both move th rocks](/assets/Dontstarvetogether1.png)
-
-![When we fishing in the cave underground](/assets/Dontstarvetogether2.png)
-
-![When our base burned in the damn hot summer by the fire dog](/assets/Dontstarvetogether3.png)
-
-![When we first create the raft but she couldn't conntrol it.She cannot pick me up and I was shouting:you idiot!](/assets/Dontstarvetogether4.png)
+<h3>all</h3>
+<ul>  
+	{% for post in site.posts %}
+	 <li> 
+    	<a href="{{ post.url }}">{{ post.title }}</a>&nbsp;&nbsp;&nbsp;{{ post.date | date: '%B %d, %Y'}}    
+	 </li> 
+	 {% endfor %} 
+</ul>
 
 
 
-**This static website build with Jekyll**
 
-![](/assets/octojekyll.png)
+{% for tag in site.tags %}  
+<h3>{{ tag[0] }}</h3>  <ul>    
+	{% for post in tag[1] %}      
+		<li>
+			<a href="{{ post.url }}">{{ post.title }}&nbsp;&nbsp;&nbsp;</a>{{ post.date | date: '%B %d, %Y'}}
+		</li>    
+	{% endfor %}  
+</ul> 
+{% endfor %}
 
