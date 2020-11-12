@@ -12,4 +12,24 @@ tags: errors
 
 - How to Extract or Unzip tar.xz File in Linux
   `tar -xf file.tar.xz`
+  
+- Check server system info
+
+  `lsb_release -a`
+
+  __output e.g.__
+
+  ````
+  
+  Distributor ID:	CentOS
+  Description:	CentOS Linux release 7.1.1503 (Core) 
+  Release:	7.1.1503
+  Codename:	Core
+  ````
+
+  
+
+  
+
+  
 
