@@ -1,4 +1,5 @@
 ---
+
 layout: post
 title: "Install Python3.8 in CentOS"
 data: 2020-11-11 15:28:10 +0800
@@ -21,7 +22,110 @@ What I suffered is in the list below:
 
    ```raise ImproperlyConfigured('SQLite 3.8.3 or later is required (found %s).' % Database.sqlite_version)```
 
-   Stackoverflow:
+   The sqlite3 version installed in the CentOS server is 3.7.17
+
+   ```
+   1.python3 进入python
+   2.import sqlite3
+   3.sqlite3.sqlite_version
+   输出3.7.17
+   ```
 
    [This solution form Stackoverflow saved my ass](https://stackoverflow.com/questions/55674176/django-cant-find-new-sqlite-version-sqlite-3-8-3-or-later-is-required-found)
 
+   I do the following command to update my sqlite3 to 3.24.0
+
+   ```
+   wget https://www.sqlite.org/2019/sqlite-autoconf-3280000.tar.gz
+   tar zxvf sqlite-autoconf-3280000.tar.gz
+   ./configure
+   make
+   sudo make install
+   
+   export LD_LIBRARY_PATH=/usr/local/lib
+   ```
+
+   **But**
+
+   Still run with this error
+
+   ```django.db.utils.NotSupportedError: deterministic=True requires SQLite 3.8.3 or higher
+   django.db.utils.NotSupportedError: deterministic=True requires SQLite 3.8.3 or higher
+   ```
+
+   This issue really kicked my ass
+
+   There are two suggestions fit my issue:
+
+   1.recompile my Python3.8 
+
+   Failed
+
+   2.use pysqlite3 instead of sqlite3 according to this  (https://www.jianshu.com/p/e81d59ccb80d)
+
+   Worked :)
+
+   ```python
+   pip3 install pysqlite3
+   
+   pip3 install pysqlite3-binary
+   
+   vi /usr/local/python3/lib/your-python/site-packages/django/db/backends/sqlite3/base.py
+   commont this line: from sqlite3 import dbapi2 as Database
+   add this line: from pysqlite3 import dbapi2 as Database # pysqlite3
+   ```
+
+2. What I actual did is something called mad.
+
+   I thought If I upgrade my Python3 from Python3.7 to Python3.8 will solve this sqlite version limit issue.
+
+   I download the python3.8.5 file from (https://www.python.org/ftp/python/)
+
+   I unzip the tar and compile and install and install and install.
+
+   I came across some other issues on Installing Python3.8 in CentOS7...
+
+   One solution you thought  causes more issues. What a damn shit...
+
+   OK, what I drop in:
+
+   ```javascript
+   ImportError: No module named _ssl
+   ```
+
+   I sovled it by 
+
+   ```
+   yum install openssl-devel bzip2-devel expat-devel gdbm-devel readline-devel sqlite-devel gcc gcc-c++  openssl-devel
+   ```
+
+   And then :
+
+   uncomment below lines in Setup
+
+   ```
+   _socket socketmodule.c timemodule.c
+   
+   # Socket module helper for SSL support; you must comment out the other
+   # socket line above, and possibly edit the SSL variable:
+   SSL=/usr/local/ssl
+   _ssl _ssl.c \
+   -DUSE_SSL -I$(SSL)/include -I$(SSL)/include/openssl \
+   -L$(SSL)/lib -lssl -lcrypto
+   ```
+
+   I found many toturials to tell you how to install python3.8
+
+   They mostly install in Windows or MacOS.Even in Linux, it is a totally different case if the system version is different.
+
+   So finally, I came into `generate-posix-vars failed` caused by the  enable-optimizations param when run .configure 
+
+   In the Python3.x.x source directory
+
+   ```./configure
+   ./configure
+   make clean
+   make && make install
+   ```
+
+   
