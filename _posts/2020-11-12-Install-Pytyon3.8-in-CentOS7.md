@@ -49,9 +49,11 @@ What I suffered is in the list below:
 
    Still run with this error
 
-   ```django.db.utils.NotSupportedError: deterministic=True requires SQLite 3.8.3 or higher
+   ```
    django.db.utils.NotSupportedError: deterministic=True requires SQLite 3.8.3 or higher
    ```
+
+   
 
    E_E
 
