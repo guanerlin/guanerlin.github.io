@@ -2,7 +2,7 @@
 layout: post
 title: "What should be prepared before submmiting a iOS app to Apple"
 date:  2020-11-13 10:32:00 +0800
-tags: iOS developing
+tags: iOS coding
 categories: coding
 ---
 

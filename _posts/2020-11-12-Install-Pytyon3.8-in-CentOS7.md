@@ -2,7 +2,7 @@
 
 layout: post
 title: "Install Python3.8 in CentOS7"
-data: 2020-11-11 15:28:10 +0800
+date: 2020-11-11 15:28:10 +0800
 tags: errors
 ---
 
