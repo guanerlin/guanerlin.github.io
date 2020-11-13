@@ -53,9 +53,6 @@ What I suffered is in the list below:
    django.db.utils.NotSupportedError: deterministic=True requires SQLite 3.8.3 or higher
    ```
 
-   
-
-   E_E
 
    There are two solutions after hours of googling:
 
@@ -68,6 +65,7 @@ What I suffered is in the list below:
    2.use pysqlite3 instead of sqlite3 according to this  (https://www.jianshu.com/p/e81d59ccb80d)
 
    Worked :)
+
 
    ```python
    pip3 install pysqlite3
