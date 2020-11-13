@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: "Install Python3.8 in CentOS"
+title: "Install Python3.8 in CentOS7"
 data: 2020-11-11 15:28:10 +0800
 tags: errors
 ---
@@ -10,11 +10,11 @@ tags: errors
 
 ### These two days I want to deploy my django project on a server CentOS
 
-what a disarstor I came into.
+what a disarster I came into.
 
 Totally a mess
 
-It like walk into a jungle and come across a lot of ```Monsters```
+It just likes walking into a jungle and jumping out  a lot of ```Monsters```
 
 What I suffered is in the list below:
 
@@ -28,12 +28,12 @@ What I suffered is in the list below:
    1.python3 进入python
    2.import sqlite3
    3.sqlite3.sqlite_version
-   输出3.7.17
+   ->>>3.7.17
    ```
 
-   [This solution form Stackoverflow saved my ass](https://stackoverflow.com/questions/55674176/django-cant-find-new-sqlite-version-sqlite-3-8-3-or-later-is-required-found)
+   [This solution form Stackoverflow](https://stackoverflow.com/questions/55674176/django-cant-find-new-sqlite-version-sqlite-3-8-3-or-later-is-required-found)
 
-   I do the following command to update my sqlite3 to 3.24.0
+   I do the following commands to update my sqlite3 to 3.24.0
 
    ```
    wget https://www.sqlite.org/2019/sqlite-autoconf-3280000.tar.gz
@@ -53,11 +53,13 @@ What I suffered is in the list below:
    django.db.utils.NotSupportedError: deterministic=True requires SQLite 3.8.3 or higher
    ```
 
-   This issue really kicked my ass
+   E_E
 
-   There are two suggestions fit my issue:
+   There are two solutions after hours of googling:
 
    1.recompile my Python3.8 
+
+   I tried many times...many ways...
 
    Failed
 
@@ -71,23 +73,25 @@ What I suffered is in the list below:
    pip3 install pysqlite3-binary
    
    vi /usr/local/python3/lib/your-python/site-packages/django/db/backends/sqlite3/base.py
+   
    commont this line: from sqlite3 import dbapi2 as Database
-   add this line: from pysqlite3 import dbapi2 as Database # pysqlite3
+     
+   add this line: from pysqlite3 import dbapi2 as Database
    ```
 
-2. What I actual did is something called mad.
+2. I dig a big hole for myself @2020-11-11
 
-   I thought If I upgrade my Python3 from Python3.7 to Python3.8 will solve this sqlite version limit issue.
+   At first I thought If I upgrade my Python3 from Python3.7 to Python3.8 will solve the sqlite version limit issue.
 
-   I download the python3.8.5 file from (https://www.python.org/ftp/python/)
+   I downloaded the python3.8.5 file from (https://www.python.org/ftp/python/)
 
-   I unzip the tar and compile and install and install and install.
+   I unzip the tar and compile the Python source code and install and install and install...
 
-   I came across some other issues on Installing Python3.8 in CentOS7...
+   I came across some other issues on Installing Python3.8.5 in CentOS7...
 
    One solution you thought  causes more issues. What a damn shit...
 
-   OK, what I drop in:
+   OK, what I drop in is the error:
 
    ```javascript
    ImportError: No module named _ssl
@@ -114,18 +118,24 @@ What I suffered is in the list below:
    -L$(SSL)/lib -lssl -lcrypto
    ```
 
-   I found many toturials to tell you how to install python3.8
+   I found many toturials telling you how to install python3.8
 
-   They mostly install in Windows or MacOS.Even in Linux, it is a totally different case if the system version is different.
+   They mostly install it in Windows or MacOS.
+
+   Even in Linux, it is a totally different case if the system version is different.
 
    So finally, I came into `generate-posix-vars failed` caused by the  enable-optimizations param when run .configure 
 
-   In the Python3.x.x source directory
-
+   Finally solved it by:
+   
+   Go in the Python source directory
+   
    ```./configure
-   ./configure
+./configure
    make clean
    make && make install
    ```
-
    
+   After intalled Python3.8, I return to solve the sqlite version 3.8.5 limit error by using pysqlite...
+   
+   This is life, so stop cring and just keep codign :)
