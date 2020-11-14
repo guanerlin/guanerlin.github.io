@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "CentOS"
-data: 2020-11-11 17:07:10 +0800
-tags: errors
+date: 2020-11-11 17:07:10 +0800
+tags: errors server
 ---
 
 - How to Remove (Delete) Directory in Linux

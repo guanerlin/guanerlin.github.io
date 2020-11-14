@@ -2,7 +2,7 @@
 layout: post
 title: "jekyll deployment"
 data: 2020-11-11 17:07:10 +0800
-tags: Jekyll
+tags: jekyll
 ---
 
 - 1.config ruby
