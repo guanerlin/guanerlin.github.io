@@ -1,8 +1,9 @@
 ---
 layout: post
 date: 2020-11-14 14:51:00 +0800
-tags: programming blog
+tags: blog
 title: "blog building references"
+categories: life
 ---
 
 First, I built this blog as some day in November 2020 I found one bloger from Korea.[https://dorbae.github.io/]

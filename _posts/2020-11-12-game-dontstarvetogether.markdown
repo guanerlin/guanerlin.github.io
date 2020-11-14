@@ -3,6 +3,7 @@ layout: post
 title:  "Game-Dont's starve together"
 date:   2020-11-12 00:11:35 +0800
 tags: game 
+categories: life
 ---
 ### Don't starve together 
 

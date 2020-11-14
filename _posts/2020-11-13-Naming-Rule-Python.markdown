@@ -2,8 +2,8 @@
 layout: post
 data: 2020-11-13 20:28:10 +0800
 title: Naming rules in Python
-tags: python coding
-categories: coding
+tags: python
+categories: programming
 ---
 
 [PEP 8](https://www.python.org/dev/peps/pep-0008/)
