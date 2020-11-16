@@ -26,3 +26,5 @@ categories: programming
 
   `bundle install`
 
+- 5.run local jekyll sever
+  `bundle exec jekyll serve`
