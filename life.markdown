@@ -4,21 +4,19 @@ title: Life
 permalink: /life/
 ---
 
-This is a screenshot captured when I was playing Don't starve together with my sister.
-
-LOL
-
-![When we both move th rocks](/assets/Dontstarvetogether1.png)
-
-![When we fishing in the cave underground](/assets/Dontstarvetogether2.png)
-
-![When our base burned in the damn hot summer by the fire dog](/assets/Dontstarvetogether3.png)
-
-![When we first create the raft but she couldn't conntrol it.She cannot pick me up and I was shouting:you idiot!](/assets/Dontstarvetogether4.png)
-
-
-
-**This static website build with Jekyll**
-
-![](/assets/octojekyll.png)
-
+<ul>
+    {% for category in site.categories %}
+    	{% if category[0] == "life" %}
+			{% for post in category[1] %}
+			 <li> 
+		    	<a href="{{ post.url }}">{{ post.title }}</a>&nbsp;&nbsp;&nbsp;{{ post.date | date: '%b %d, %Y'}} &nbsp;&nbsp;&nbsp;
+		    	<p>tag:
+		    	{% for tag in post.tags %}
+		    		&nbsp;&nbsp;&nbsp;{{ tag }}&nbsp;
+		    	{% endfor %}
+		    	</p>
+			 </li> 
+			 {% endfor %} 
+		 {% endif %}
+    {% endfor %}
+</ul>
