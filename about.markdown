@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-**Software Engineer@blue square**
+**Software Engineer@blue sphere**
 
 **Likes reading, movies, food**
 
