@@ -13,16 +13,22 @@ permalink: /coding/
 	 {% endfor %} 
 </ul>
 
-
-
-
+<h3>test</h3>
 {% for tag in site.tags %}  
-<h3>{{ tag[0] }}</h3>  <ul>    
-	{% for post in tag[1] %}      
+	{% if tag[0] == "programming" %}
+	<h2> {{ tag[0] }} </h2>
+	<ul>    
+		{% for post in tag[1] %}
 		<li>
-			<a href="{{ post.url }}">{{ post.title }}&nbsp;&nbsp;&nbsp;</a>{{ post.date | date: '%B %d, %Y'}}
-		</li>    
-	{% endfor %}  
-</ul> 
+			<a href="{{ post.url }}">{{ post.title }}&nbsp;&nbsp;&nbsp;</a>
+			{{ post.date | date: '%B %d, %Y'}} 
+		</li> 
+		{% endfor %}  
+	</ul>    
+	{% endif %}
 {% endfor %}
+
+
+
+
 
