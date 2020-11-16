@@ -3,7 +3,7 @@
 layout: post
 title: "Install Python3.8 in CentOS7"
 date: 2020-11-11 15:28:10 +0800
-tags: errors
+tags: error
 categories: programming
 ---
 
@@ -140,3 +140,4 @@ What I suffered is in the list below:
    After intalled Python3.8, I return to solve the sqlite version 3.8.5 limit error by using pysqlite...
    
    This is life, so stop cring and just keep codign :)
+

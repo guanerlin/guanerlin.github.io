@@ -2,7 +2,7 @@
 layout: post
 title: "zsh: command not found: django-admin.py"
 data: 2020-11-11 15:28:10 +0800
-tags: errors
+tags: error
 categories: programming
 ---
 
