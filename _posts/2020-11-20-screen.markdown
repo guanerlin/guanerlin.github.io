@@ -16,7 +16,7 @@ List some handy command below:
 
 - List all the screens exist
 
-  `screen -lr`
+  `screen -ls`
 
 - Attach one screen list
 
