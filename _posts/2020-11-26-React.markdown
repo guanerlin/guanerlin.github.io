@@ -1,0 +1,9 @@
+---
+layout: post
+date: 2020-11-26 14:37:00 +0800
+title: "React"
+tags: javascript
+categories: programming
+---
+
+React is a JavaScript library used to build user interface.
