@@ -3,6 +3,7 @@ layout: post
 title: "iPhone cannot connect to the iCloud server or Apple ID"
 tags: error iPhone
 categories: programming
+date: 2020-11-17 19:33:00 +0800
 ---
 
 ## Cannot logout the iCloud account from my iPhoneSE yesterday.
@@ -21,8 +22,8 @@ etc.
 
 Finally the solution is :
 
-It turns out my iPhoneSE set the netorking of the Setting app to None.
+It turns out my iPhoneSE set the netorking of the `Setting` app to None.
 
 Neither cellular data nor WLAN network accessory authorize to the Setting app.
 
-So Setting->Wifi->Setting App->WLAN&Cellular Data
+So `Setting->Wifi->Setting App->WLAN&Cellular Data`
