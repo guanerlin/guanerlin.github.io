@@ -1,0 +1,40 @@
+---
+layout: post
+title: "A handy application called Screen in linux"
+date: 2020-11-20 18:18:00 +0800
+tags: linux
+categories: programming
+---
+
+I used the screen tool today on CentOS7 to maintian my Django web service on a server while I can terminate the ssh connection
+
+### how to install screen
+
+ `brew install screen`
+
+List some handy command below:
+
+- List all the screens exist
+
+  `screen -ls`
+
+- Attach one screen list
+
+  `screen -rd screenname or number`
+
+- Exis from the screen
+
+  `Ctrl + A then Press d `
+
+- Delete the screen when you in the sreen
+
+  `Ctrl + A then Press :quit`
+
+
+
+### how to tell you are in a screen ?
+
+I'm using macOS terminall to make the ssh connection with my server.
+
+Look at the top status title in your terminall there will be 'screen x' at the beginning of the it
+
