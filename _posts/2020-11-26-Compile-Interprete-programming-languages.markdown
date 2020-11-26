@@ -79,7 +79,7 @@ Although this efficiency hit might seem like a downside, interpretred languages 
 Another benefit is that the code is always available for reading and it can be easily changed to work the way you want it to. With compiled code, you need to find where the code is kept, change it, compile it, and redeploy the program. With interpreted code, however you open the program, change it, and it is ready to go.
 
 ```
-macOS is not base on Linux;
+macOS is not based on Linux;
 Both kernels  have very different histories and features.
 macOS is based on a combination of two even older code base(Mach kernel and BSD code)
 Linux was created by Linus Torvalds in 1911.
