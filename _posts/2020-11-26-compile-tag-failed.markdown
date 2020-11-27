@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2020-11-26 16:37:00 +0800
 tags: iOS Cocoapods
 categories: programming
 title: "xcodebuild某tag版本失败，由于Podfile中pod文件编译失败导致"
