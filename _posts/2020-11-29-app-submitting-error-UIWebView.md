@@ -1,0 +1,29 @@
+---
+layout: post
+date: 2020-11-29 11:11:00 +0800
+tags: iOS
+categories: programming
+title: "Apple reject new app's ipa commiting caused by UIWebView"
+---
+
+Yesterday, I archieve the treector app to App Store and receive the ipa rejection email.
+If the email sent from Apple contains the words "We identified one or more issues with a recent delivery for your app, "xxx" x.x (xxx). Please correct the following issues, then upload again."
+
+It means your ipa submitting is failed. If you do not correct the issues, you build ipa cannot be displayed in the itunesconnect.
+
+`The issues of this time is mainly about the UIWebView`
+
+<br>
+
+
+ITMS-90683: Missing Purpose String in Info.plist - Your app's code references one or more APIs that access sensitive user data. The app's Info.plist file should contain a NSPhotoLibraryUsageDescription key with a user-facing purpose string explaining clearly and completely why your app needs the data. Starting Spring 2019, all apps submitted to the App Store that access user data are required to include a purpose string. If you're using external libraries or SDKs, they may reference APIs that require a purpose string. While your app might not use these APIs, a purpose string is still required. You can contact the developer of the library or SDK and request they release a version of their code that doesn't contain the APIs. Learn more (https://developer.apple.com/documentation/uikit/core_app/protecting_the_user_s_privacy).
+
+
+So use the following command to find the files contain `IUWebView` in the path of your project
+```
+grep -r UIWebView .
+```
+
+It turns out that the pod AFNetwroking and BlocksKit have the category of the UIWebView Which I did not reference any in my project.
+I should download the source code directly and remote the `UIWebView+AFNetworking.h` and `UIWebView+BlocksKit.h` then rearchive my app.
+
