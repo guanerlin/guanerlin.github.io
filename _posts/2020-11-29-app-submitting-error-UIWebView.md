@@ -27,5 +27,15 @@ grep -r UIWebView .
 ```
 
 It turns out that the pod AFNetwroking and BlocksKit have the category of the UIWebView Which I did not reference any in my project.
-I download the source code directly from github.Removed the `UIWebView+AFNetworking.h` and `UIWebView+BlocksKit.h` then rearchive my app, upload the ipa to Apple again:) Wish me good luck.
+I download the source code directly from github.Removed the `UIWebView+AFNetworking.h` and `UIWebView+BlocksKit.h` then rearchive my app, upload the ipa to Apple again:)
 
+### After I removed the UIWebView related code and resubmited the ipa to Apple I received the email that indecated my submit is successful.
+
+As Apple replied
+
+```
+On average, 50 percent of apps are reviewed in 24 hours and over 90 percent are reviewed in 48 hours. Once we've completed the review, your app's status will be updated and you will be notified.
+```
+
+
+I will post more about the incoming rejection about the treector app in future.
