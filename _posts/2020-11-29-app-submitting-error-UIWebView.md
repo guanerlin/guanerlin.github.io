@@ -29,7 +29,7 @@ grep -r UIWebView .
 It turns out that the pod AFNetwroking and BlocksKit have the category of the UIWebView Which I did not reference any in my project.
 I download the source code directly from github.Removed the `UIWebView+AFNetworking.h` and `UIWebView+BlocksKit.h` then rearchive my app, upload the ipa to Apple again:)
 
-### After I removed the UIWebView related code and resubmited the ipa to Apple I received the email that indecated my submit is successful.
+### After I removed the UIWebView related code and resubmited the ipa to Apple I received the email that indecated the ipa I submitted is successful.
 
 As Apple replied
 
