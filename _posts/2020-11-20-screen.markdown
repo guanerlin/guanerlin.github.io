@@ -36,5 +36,5 @@ List some handy command below:
 
 I'm using macOS terminall to make the ssh connection with my server.
 
-Look at the top status title in your terminall there will be 'screen x' at the beginning of the it
+Look at the top status title on the top your terminal app and there will be 'screen x' at the beginning of title.
 
