@@ -1,0 +1,31 @@
+---
+title: "Simple Q&A"
+date: 2020-12-09 10:29:00 +0800
+tags: iOS
+categories: programming
+---
+
+今天尝试了一个Runtime的小demo，从这个sunnyxx里看到的
+
+```
+@implementation Son : Father
+- (id)init {
+    self = [super init];
+    if (self) {
+        NSLog(@"%@", NSStringFromClass([self class]));
+        NSLog(@"%@", NSStringFromClass([super class]));
+    }
+    return self;
+}
+@end
+```
+
+```
+Son
+Son
+```
+原因：因为super是编译器指示符，向super发送消息会被编译成objc_msgSendSuper，但仍以self当做receiver
+
+
+为了尝试这个代码，我在.m里实现了Son和Father两个类，但是因为随手在一个iOS项目里的ViewController里尝试的，我遇到了一个盲区，既为什么同一个.m文件里定义的类，必须把interface对象生命放到前面，才能被后面使用的类正确使用，即通过编译；
+stackoverflow上一个大哥说的很明白，因为编译器只认识他编译过的代码，也即是，是有顺序的，在同一个文件中；那么发散出来，整个编译过程中呢？ 今儿来继续熟悉编译原理吧
