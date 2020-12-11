@@ -2,7 +2,7 @@
 layout: post
 title:  "Compiled Language VS. Interpreted Language"
 date:   2020-11-26 11:00:35 +0800
-tags: computer_science 
+tags: language 
 categories: programming
 ---
 
