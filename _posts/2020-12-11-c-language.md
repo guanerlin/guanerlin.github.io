@@ -9,7 +9,7 @@ categories: programming
 
 今天发现C语言忘光了。其实就是压根当年学的时候，没有太在意，后来工作中也没有认真思考和总结回顾过。
 说来惭愧，写了这么久iOS程序，一直不能深入了解很多东西，原来都是因为我C语言这层就是个丈二的和尚。
-趁着周末，赶紧补补吧。这个周末补补C基础，把[这个网站][(https://www.runoob.com/cprogramming/c-variables.html)] 的都走一遍基础理论知识。
+趁着周末，赶紧补补吧。这个周末补补C基础，把[这个网站](https://www.runoob.com/cprogramming/c-variables.html)的都走一遍基础理论知识。
 
 ### OKR
 
