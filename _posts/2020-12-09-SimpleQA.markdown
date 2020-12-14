@@ -1,8 +1,9 @@
 ---
-title: "Simple Q&A"
+title: "objc runtime"
 date: 2020-12-09 10:29:00 +0800
 tags: iOS
 categories: programming
+layout: post
 ---
 
 今天尝试了一个Runtime的小demo，从这个sunnyxx里看到的
@@ -44,11 +45,23 @@ image在编译器里是模块的意思
 **但是在objc中，相同文件的@implementation里的方法却没有这个编译限制，看起来还是编译器在对不同语言做了不同操作，这个问题我弄懂后再来补充**
 
 
-### 各种iOS中涉及到的发音
+
+<br>
+### 二.各种iOS中涉及到的发音
 说实话，大多数程序员的技术名称发音都很“印度”，包括我自己，所以有时候特别在意一些发音，不想丢人嘿嘿嘿
 这里积累下我觉得比较关键的容易发错的
 
 clang c发音abc的c，lang发音language，因为它就是缩写组成的
 
 Mach-O文件 这个我是Macintosh上的out文件，所以是Mac O
+
+
+<br>
+### 三.编译objc源代码，debug
+2020-12-14今天下载了objc的源代码，想一边看别人的解释，一边debug看下，因为上周末正好看了一些c语言基础，
+	正好巩固下；结果gg了俩小时，下载下来可编译成功的objc工程，就是无法debug，即不走断点。最后在公交站等车时不甘心手机搜索到了这篇博客[调试 iOS 的 objc 运行时，你可能还需要掌握这些知识](https://blog.csdn.net/u011449777/article/details/105521832)，找到解决办法；但是具体原因，还是得继续想想。
+
+解决办法就是在Xcode中，target->Signing&Capabilities->Disable Library Validation勾选，即可调试非个人签名的二进制库了
+
+![示意图](/assets/xcode-runtime-debug.png)
 
