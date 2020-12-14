@@ -222,25 +222,53 @@ categories: programming
 		```
 
 5. **结构体**
+	
 	- C 数组允许定义可存储相同类型数据项的变量，结构是C语言编程中另一种用户自定义的可用的数据类型，它允许您存储不同类型的数据项。
+	
 	- 结构体的成员可以包含其他结构体，也可以包含指向自己结构体类型的指针，这可以形成更复杂的结构，比如链表和树等
+	
 	- struct定义了一个包含多个成员呢数据变量的新数据类型，就像数据库里的一条记录
+	
 	- variable-list 结构变量，定义在结构的末尾，最后一个分号之前，您可以指定一个或多个结构变量。下面是声明结构的方式：
+	
 	- tag 是结构体标签
+	
+		```	
+			//Type1
+			struct {
+				char *anonymousStruct
+			} structVar1;
+			
+			//Type2
+			struct tag { 
+			    member-list
+			    member-list 
+			    member-list  
+			    ...
+			} variable-list ;
+			
+			//或使用typedef定义结构体
+			typedef struct {
+				char name[50];
+				int price;
+			} Book;
+		```
 
-		```
-	struct tag { 
-	    member-list
-	    member-list 
-	    member-list  
-	    ...
-	} variable-list ;
-	//或使用typedef定义结构体
-	typedef struct {
-		char name[50];
-		int price;
-	} Book;
-		```
+	- 结构体指针变量`struct struct_type *structP;` 如果需要通过结构体指针访问结构体内的成员，需要使用`structP->var`形式，用到`->`运算符
+
+
+****
+<br>
+
+### Note Part 4(2020-12-14)
+
+1. **typedef**
+	- C语言提供了`typedef`关键字，您可以使用它来为类型取一个新的名字。下面的实例为单字节数字定义了一个术语BYTE， 在这个类型定义之后，标识符 BYTE 可作为类型 unsigned char的缩写
+
+
+	`typedef unsigned char BYTE`
+
+	- #define是由预编译期处理，typedef由编译器处理；相比较而言，#define可以给数值创建别名，而typedef只能给类型创建别名
 
 
 
