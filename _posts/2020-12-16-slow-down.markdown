@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Slow down"
+date: 2020-12-15 23:00:01 +0800
+tags: blog
+categories: life
+---
+
+今天有点急躁，觉得查缺补漏需要太多：
+1. 比如Objc基础知识，更别提还有好多framework的理解
+2. 算法和数据结构的0基础...
+3. flutter需要赶紧找时间学习
+4. swift心心念念想学，但是一直被耽误，想尽快捡起来，看完Ray Wenderlich的那本iOS Apprentice
+
+然后看到了小北xxx公众号里，知乎的一个回答
+看到了另外一个答案，写的关于，太用力的人跑不远；这句话太击中我了；
+因为知乎不允许转载，我截图保存的。
+
+
+
+![图1](/assets/calmdown1.png)
+![图2](/assets/calmdown2.png)
+![图3](/assets/calmdown3.png)
