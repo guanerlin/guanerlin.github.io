@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The first post written by Sublime"
-dage: 2020-11-11 14:26:01 +0800
+date: 2020-11-11 14:26:01 +0800
 tags: blog
 categories: life
 ---

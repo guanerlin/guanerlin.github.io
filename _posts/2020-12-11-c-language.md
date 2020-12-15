@@ -25,7 +25,7 @@ categories: programming
 
 
 #### Duration
-	希望是本月个人碎片时间完成
+	希望两个月内完成
 
 
 <br>
@@ -236,25 +236,6 @@ categories: programming
 	- C 数组允许定义可存储相同类型数据项的变量，结构是C语言编程中另一种用户自定义的可用的数据类型，它允许您存储不同类型的数据项。
 	
 	- 结构体的成员可以包含其他结构体，也可以包含指向自己结构体类型的指针，这可以形成更复杂的结构，比如链表和树等
-<<<<<<< HEAD
-	- `struct`定义了一个包含多个成员呢数据变量的新数据类型，就像数据库里的一条记录
-	- variable-list 结构变量，定义在结构的末尾，最后一个分号之前，您可以指定一个或多个结构变量。下面是声明结构的方式：
-	- `tag` 是结构体标签
-
-		```
-	struct tag { 
-	    member-list
-	    member-list 
-	    member-list  
-	    ...
-	} variable-list ;
-	//或使用typedef定义结构体
-	typedef struct {
-		char name[50];
-		int price;
-	} Book;
-=======
-	
 	- struct定义了一个包含多个成员呢数据变量的新数据类型，就像数据库里的一条记录
 	
 	- variable-list 结构变量，定义在结构的末尾，最后一个分号之前，您可以指定一个或多个结构变量。下面是声明结构的方式：
@@ -280,7 +261,6 @@ categories: programming
 				char name[50];
 				int price;
 			} Book;
->>>>>>> 3dd2aecfb42d475b76b460c1b3ae238dcc98760f
 		```
 
 	- 结构体指针变量`struct struct_type *structP;` 如果需要通过结构体指针访问结构体内的成员，需要使用`structP->var`形式，用到`->`运算符
@@ -299,6 +279,24 @@ categories: programming
 
 	- #define是由预编译期处理，typedef由编译器处理；相比较而言，#define可以给数值创建别名，而typedef只能给类型创建别名
 
+
+****
+<br>
+
+### Note Part 5(2020-12-16)
+
+1. **void 星**
+	- `void *`
+	- void 指针可以指向任意类型的数据，就是说可以用任意类型的指针对 void 指针对 void 指针赋值。例如：
+
+	```
+	int *a；
+	void *p；
+	p=a；
+	```
+
+
+	- 如果要将 void 指针 p 赋给其他类型的指针，则需要强制类型转换，就本例而言：a=（int *）p。
 
 
 *未完待续...*

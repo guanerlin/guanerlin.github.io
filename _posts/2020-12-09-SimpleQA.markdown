@@ -65,3 +65,15 @@ Mach-O文件 这个我是Macintosh上的out文件，所以是Mac O
 
 ![示意图](/assets/xcode-runtime-debug.png)
 
+### 四.dyld
+
+- 动态库加载程序，iOS上的执行程序加载也是dyld
+
+~~DSC 手机内共享库存放？？？~~
+
+~~系统的C函数是动态的，在绑定的一刻才确定地址~~
+
+- fishhook是通过重新绑定符号，来hook c标准库函数
+
+- c语言是静态语言，fishhook是无法hook自定义的c语言函数的
+
