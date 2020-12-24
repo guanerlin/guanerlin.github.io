@@ -1,6 +1,6 @@
 ---
 layout: post
-title: " __init__ raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))"
+title: " python, django, error"
 tags: Django error
 categories: programming
 date: 2020-12-24 18:30:00 +0800
