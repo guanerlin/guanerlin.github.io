@@ -25,7 +25,7 @@ categories: programming
 
 
 #### Duration
-	希望是本月个人碎片时间完成
+	希望两个月内完成
 
 
 <br>
@@ -205,6 +205,10 @@ categories: programming
 
 		`typedef int (*fun_ptr)(int,int);`
 
+    下面两张图解释指针的意义：
+  	![Pointer](/assets/c-pointer-tenet1.png)
+
+  	![Pointer2](/assets/c-pointer-tenet2.png)
 3. **数组**
 	- c语言支持数组***数据结构***，数组中存放的是*相同数据类型*的变量，~~他们在内存中是连续存放的~~
 
@@ -212,13 +216,19 @@ categories: programming
 4. **字符串**
 	- c语言字符串就是一个以'\0'`null`为结尾的字符数组
 	- ''里面只能放一个字符; "" 里面表示是字符串系统自动会在串末尾补一个0。
+	
 
 		```
 		<!-- char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'}; -->
-
 		char greeting[] = "Hello";
 				
-		printf("Greeting message: %s\n", greeting );
+		printf("Greeting message: %s\n", greeting );		
+		
+		
+		char *str = "this is a string" 
+		//c语言里，没有专门的字符串类型，是用字符数组表示，str这里是第一个字符串的首地址
+		printf("%s\n", str);//输出  this is a string
+		printf("%p\n", str);//输出指针所指向的内存地址
 		```
 
 5. **结构体**
@@ -226,7 +236,6 @@ categories: programming
 	- C 数组允许定义可存储相同类型数据项的变量，结构是C语言编程中另一种用户自定义的可用的数据类型，它允许您存储不同类型的数据项。
 	
 	- 结构体的成员可以包含其他结构体，也可以包含指向自己结构体类型的指针，这可以形成更复杂的结构，比如链表和树等
-	
 	- struct定义了一个包含多个成员呢数据变量的新数据类型，就像数据库里的一条记录
 	
 	- variable-list 结构变量，定义在结构的末尾，最后一个分号之前，您可以指定一个或多个结构变量。下面是声明结构的方式：
@@ -270,6 +279,24 @@ categories: programming
 
 	- #define是由预编译期处理，typedef由编译器处理；相比较而言，#define可以给数值创建别名，而typedef只能给类型创建别名
 
+
+****
+<br>
+
+### Note Part 5(2020-12-16)
+
+1. **void 星**
+	- `void *`
+	- void 指针可以指向任意类型的数据，就是说可以用任意类型的指针对 void 指针对 void 指针赋值。例如：
+
+	```
+	int *a；
+	void *p；
+	p=a；
+	```
+
+
+	- 如果要将 void 指针 p 赋给其他类型的指针，则需要强制类型转换，就本例而言：a=（int *）p。
 
 
 *未完待续...*
