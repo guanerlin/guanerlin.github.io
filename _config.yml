@@ -35,6 +35,8 @@ footer_text: "Stay curious"
 profile-picture: assets/profile.png
 favicon_location: assets/favicon.ico
 
+theme: garth-jekyll-theme
+
 permalink: /:year-:month-:day-:title/
 sass:
     style: compressed
