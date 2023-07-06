@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: About
 permalink: /about/
 ---
@@ -7,7 +7,5 @@ permalink: /about/
 **Software Engineer@blue sphere**
 
 **Likes reading, travelling**
-
-
 
 **This static website build with Jekyll**
