@@ -6,11 +6,8 @@ permalink: /about/
 
 **Software Engineer@blue sphere**
 
-**Likes reading, movies, food**
+**Likes reading, travelling**
 
 
 
 **This static website build with Jekyll**
-
-![](/assets/octojekyll.png)
-
