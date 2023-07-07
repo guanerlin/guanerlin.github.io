@@ -13,7 +13,7 @@ permalink: /about/
 #### This static website build with Jekyll
 
 
-- [Folllow on twitter](https://twitter.com/clusure9527) [<img src="https://cdn.buymeacoffee.com/buttons/default-yellow.png" width="217"/>](https://www.buymeacoffee.com/zhenglin95f#support)
+- [Folllow on twitter](https://twitter.com/guanerlin) [<img src="https://cdn.buymeacoffee.com/buttons/default-yellow.png" width="217"/>](https://www.buymeacoffee.com/guanerlin#support)
 
 <!-- 
 1. Add `gem "garth-jekyll-theme"` to your `Gemfile` to add the theme as a dependancy
