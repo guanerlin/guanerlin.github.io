@@ -47,8 +47,6 @@ favicon_location: assets/favicon.ico
 # 1. Files excluded from Jekyll builds
 exclude:
 - README.md
-- CODE_OF_CONDUCT.md
-- CONTRIBUTING.md
 - LICENSE
 - CNAME
 - Gemfile
@@ -71,7 +69,7 @@ excerpt_separator: <!-- more --> # Marks end of excerpt in posts
 # 5. Collections
 collections:
   posts:
-    title: Blog # Needed for Siteleaf
+    title: Home # Needed for Siteleaf
     output: true
     # description: "This is merely a demo, find out more [about Garth](about)" # The post list page content
 
@@ -93,5 +91,5 @@ defaults:
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
 logo: "/assets/logo.svg" # Site logo
-# logo: "assets/favicon.ico"
+fivicon: "favicon.ico"
 lang: en-GB

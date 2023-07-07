@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 
-**Software Engineer@blue sphere**
+**I'm an iOS Developer**
 
-**Likes reading, travelling**
+**Like reading, travelling**
 
 **This static website build with Jekyll**
