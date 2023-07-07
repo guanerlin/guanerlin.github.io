@@ -35,8 +35,6 @@ footer_text: "Stay curious"
 profile-picture: assets/profile.png
 favicon_location: assets/favicon.ico
 
-theme: garth-jekyll-theme
-
 # Site configuration
 # 1. Files excluded from Jekyll builds
 # 2. Installed Gems
