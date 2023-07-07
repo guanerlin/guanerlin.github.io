@@ -18,16 +18,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Life Apprentice
-subtitle: The life of a frustrated engineer
-email: zhenglin9527@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Life is hard, so as the coding work. 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://guanerlin.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: closure9527
-github_username:  guanerlin
-footer_text: "Stay curious"
 
 # Site configuration
 # 1. Files excluded from Jekyll builds
@@ -51,14 +41,14 @@ plugins:
 - jekyll-paginate
 
 # 3. Gem settings
-paginate: 2 # jekyll-paginate > items per page
-paginate_path: page:num # jekyll-paginate > blog page
+paginate: 3 # jekyll-paginate > items per page
+paginate_path: /page:num # jekyll-paginate > blog page
 
 # 4. Jekyll settings
 sass:
   style: compressed # Style compression
-permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
 excerpt_separator: <!-- more --> # Marks end of excerpt in posts
+timezone: Europe/London # Timezone for blog posts and alike
 
 # 5. Collections
 collections:
@@ -83,6 +73,16 @@ defaults:
       layout: post # Default layout
 
 # 7. Site settings
+title: Life Apprentice
+subtitle: The life of a frustrated engineer
+email: zhenglin9527@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Life is hard, so as the coding work. 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://guanerlin.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: closure9527
+github_username:  guanerlin
+motto: "Stay curious"
 encoding: utf-8 # Make sure the encoding is right
 logo: "/assets/logo.svg" # Site logo
 fivicon: "favicon.ico"
