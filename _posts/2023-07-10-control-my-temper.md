@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reborn"
+title:  "Bad temper???"
 date:   2023-07-07 11:17:35 +0800
 tags: chore
 categories: life
