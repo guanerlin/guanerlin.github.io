@@ -83,12 +83,11 @@ url: "https://guanerlin.github.io" # the base hostname & protocol for your site,
 social_username: guanerlin
 motto: "Stay curious"
 encoding: utf-8 # Make sure the encoding is right
-logo: "/assets/logo.svg" # Site logo
-fivicon: "favicon.ico"
+# logo: "/assets/logo.svg" # Site logo
+favicon: "favicon.ico"
 lang: en-GB
 
 #8. tag
-
 tag_page_layout: tag_page
 tag_page_dir: tag
 tag_feed_layout: tag_feed
