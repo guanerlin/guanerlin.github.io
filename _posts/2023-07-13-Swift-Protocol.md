@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Protocols in Swift"
-date:   2023-07-013 14:49:35 +0800
+date:   2023-07-13 14:49:35 +0800
 tags: iOS Swift
 categories: Programming
 ---
@@ -39,3 +39,6 @@ There'd be no way to equate two completely different kinds of structs.
 Since their == function above wouldn't be able to take the two different types as arguments.
 
 This is also why we can never do var myView: View(View is Self-referencing as well).
+
+
+## Generics and Protocols
