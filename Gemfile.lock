@@ -31,11 +31,29 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
+    jekyll-archives (2.2.1)
+      jekyll (>= 3.6, < 5.0)
+    jekyll-include-cache (0.2.1)
+      jekyll (>= 3.7, < 5.0)
     jekyll-paginate (1.1.0)
+    jekyll-redirect-from (0.16.0)
+      jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
+    jekyll-seo-tag (2.8.0)
+      jekyll (>= 3.8, < 5.0)
+    jekyll-sitemap (1.4.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-tagging (1.1.0)
       nuggets
+    jekyll-theme-chirpy (6.1.0)
+      jekyll (~> 4.3)
+      jekyll-archives (~> 2.2)
+      jekyll-include-cache (~> 0.2)
+      jekyll-paginate (~> 1.1)
+      jekyll-redirect-from (~> 0.16)
+      jekyll-seo-tag (~> 2.7)
+      jekyll-sitemap (~> 1.4)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.4.0)
@@ -50,7 +68,7 @@ GEM
     nuggets (1.6.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (5.0.1)
+    public_suffix (5.0.3)
     rake (13.0.6)
     rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
@@ -70,9 +88,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  google-protobuf (= 3.23.3)
+  http_parser.rb (~> 0.6.0)
   jekyll
   jekyll-paginate
   jekyll-tagging
+  jekyll-theme-chirpy (~> 6.0, >= 6.0.1)
 
 BUNDLED WITH
    1.17.2
