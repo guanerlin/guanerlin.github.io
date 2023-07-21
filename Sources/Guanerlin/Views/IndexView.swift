@@ -54,7 +54,7 @@ extension Node where Context == HTML.BodyContext {
                                     .class("index-item-more float-container"),
                                     .a(
                                         .href(item.path),
-                                        .text("查看全文")
+                                        .text("detail")
                                     )
                                 )
                             )

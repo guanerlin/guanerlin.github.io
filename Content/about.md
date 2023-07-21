@@ -19,6 +19,6 @@ tags: first, post
 
 > Coding, Sport, Life
 
-#### 联系我 ####
+#### Contact me ####
 
-> Email: xxxxx@gmail.com
+> Email: guanerlin9527@gmail.com

@@ -1,7 +1,7 @@
 ---
 date: 2023-07-21 10:46
 description: Changed mine github website from jekyll to Publish
-tags: first, article
+tags: website, article
 ---
 ## Refresh
 
