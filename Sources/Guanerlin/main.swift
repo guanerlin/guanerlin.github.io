@@ -49,6 +49,6 @@ try Guanerlin().publish(
             itemPredicate: nil
         ),
         .generateSiteMap(),
-        .unwrap(.gitHub("guanerlin/guanerlin.github.io", useSSH: false), PublishingStep.deploy)
+        .unwrap(.gitHub("guanerlin/guanerlin.github.io", useSSH: true), PublishingStep.deploy)
     ]
 )
