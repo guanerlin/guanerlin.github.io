@@ -21,7 +21,7 @@ extension PublishingStep where Site == Guanerlin {
                 case .posts:
                     section.title = "Posts"
                 case .project:
-                    section.title = "APP"
+                    section.title = "Projects"
                 case .about:
                     section.title = "About"
                 case .tags:
