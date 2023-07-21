@@ -376,7 +376,7 @@ let googleAndBaidu: String =
     <script>
         // dynamic User by Hux
         var _gaId = 'UA-165296388-1';
-        var _gaDomain = 'fatbobman.com';
+        var _gaDomain = 'google.com';
 
         // Originial
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
