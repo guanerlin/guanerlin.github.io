@@ -4,3 +4,7 @@
 /.swiftpm
 /*.xcodeproj
 .publish
+Package.resolved
+*.swift
+Resources
+Sources
