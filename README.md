@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="Logo.png" width="400" max-width="90%" alt="Publish" />
+    <img src="refer/Logo.png" width="400" max-width="90%" alt="Publish" />
 </p>
 
 
